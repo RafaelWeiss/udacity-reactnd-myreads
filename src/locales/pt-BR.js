@@ -2,7 +2,7 @@ module.exports = {
 	"label.title": "Minhas Leituras",
 	"label.currentlyReading" : "Lendo Atualmente",
 	"label.wantToRead":"Quero Ler",
-	"label.read":"Ler",
+	"label.read":"Lido",
 	"label.none":"Nenhum",
 	"label.addBook":"Adicionar Livro",
 	"label.moveTo":"Mover para...",

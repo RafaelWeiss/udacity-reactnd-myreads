@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { Debounce } from 'react-throttle'
 import Book from './Book'
-import { injectIntl } from "react-intl";
 import I18n from '../utils/I18n';
 import SeachInput from './SeachInput';
 
@@ -18,7 +17,6 @@ class SearchBooks extends Component {
     };
     
     render() {
-        const { intl } = this.props
         return (
             <div className="search-books">
                 <div className="search-books-bar">

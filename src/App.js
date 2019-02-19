@@ -91,7 +91,7 @@ class BooksApp extends React.Component {
       .search(query)
       .then(response => {
         if (response.error) {
-          this.setState({ booksSearchResult: [], searchMessage: <I18n id="msg.noBookFound" /> });
+          this.setState({ booksSearchResult: [], searchMessage: <I18n id="msg.noBooksFound" /> });
           return;
         }
 

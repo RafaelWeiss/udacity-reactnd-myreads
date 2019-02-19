@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import shelves from '../constants/shelves.js';
-import { SHELF_NONE } from '../constants/constants.js';
 import { injectIntl } from "react-intl";
+import { searchTerms } from '../constants/searchTerms.js';
+
+const searchTermsMap = searchTerms.map((term) => term.toLowerCase());
 
 class BookOptions extends Component {
     static propTypes = {
         onFindBooks: PropTypes.func.isRequired
     };
 
+    isValidTerm(query){
+        return searchTermsMap.indexOf(query.toLowerCase()) !== -1;
+    }
+
     handleChangeSearchInput = ({ target }) => {
-        const query = target.value;
-        this.props.onFindBooks(query);
+        const query = target.value.trim();
+        if (this.isValidTerm(query)){
+            this.props.onFindBooks(query);
+        }
     };
 
     render() {;

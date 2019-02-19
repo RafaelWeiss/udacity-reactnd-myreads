@@ -17,7 +17,8 @@ class AppHeader extends Component {
     render() {
         const intl = this.props.intl;
         return (
-            <div className="appHeader">
+            <div className="list-books-title">
+                <h1><I18n id="label.title"/></h1>
                 <select value={this.props.currentLocale} onChange={this.handleChangeLanguage}>
                     {locales.map(locale => (
                         <option key={locale.locale} value={locale.locale}>{intl.formatMessage({ id: locale.label })}</option>

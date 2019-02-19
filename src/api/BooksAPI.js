@@ -7,7 +7,6 @@ let token = localStorage.token
 if (!token)
   token = localStorage.token = Math.random().toString(36).substr(-8)
 
-console.log('My Token:', token);
 
 const headers = {
   'Accept': 'application/json',

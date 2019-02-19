@@ -21,9 +21,6 @@ class BookShelf extends Component {
 
     return (
       <div className="list-books">
-        <div className="list-books-title">
-          <h1><I18n id="label.title"/></h1>
-        </div>
         <div className="list-books-content">
           <div>
             {shelvesToDisplay.map((shelf)=> (
