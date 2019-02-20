@@ -104,7 +104,7 @@ class BooksApp extends React.Component {
           });
         }
         this.setState({ booksSearchResult, searchMessage: '' });
-      });
+    });
   };
 
   handleClearBooksSearchResult = () => {

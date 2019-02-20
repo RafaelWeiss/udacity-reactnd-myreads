@@ -16,7 +16,7 @@ class Shelf extends Component {
         ))
 
         return (
-            <div className="bookshelf">
+            <div className="bookshelf" id={"#" + this.props.shelf}>
                 <h2 className="bookshelf-title"><I18n id={"label." + this.props.shelf} /></h2>
                 <div className="bookshelf-books">
                     <ol className="books-grid">
